@@ -5,16 +5,44 @@
 }
 
 .container > h1 {
-	color: red;
+	color: #FFFFFF;
 	height: 40px;
 	line-height: 40px;
 	width: 100%;
-	border: solid 1px red;
+	border: solid 1px #778ca3;
+	background-color: #778ca3;
 	padding: 5px;
 }
 
 .container > p {
-	font-weight: bold;
-	width: 500px;
 	padding: 5px;
+	text-align: center;
+}
+
+.photos {
+	display: flex;
+	margin: auto;
+	width: 50%;
+}
+
+.photos img {
+	padding: 7px;
+}
+
+#container2 > h1 {
+	color: #FFFFFF;
+}
+
+#container2 {
+	text-align: justify;
+	background-color: #778ca3;
+	float:left;
+	width: 200px;
+	padding: 10px;
+}
+
+#container3 {
+	text-align: justify;
+	margin-left: 220px;
+	padding: 10px;
 }
