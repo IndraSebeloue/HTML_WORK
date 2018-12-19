@@ -1,12 +1,5 @@
-/* Les polices */
-font-family: 'Ubuntu', sans-serif;
-font-family: 'Titillium Web', sans-serif;
-font-family: 'Rajdhani', sans-serif;
-/* fin */
-
 body {
 	margin: 0;
-	overflow-x: hidden;
 }
 
 p {
@@ -43,7 +36,7 @@ p:first-letter {
 }
 
 #nav {
-	position: fixed;
+	position: sticky;
 	z-index: 999;
 	width: 100%;
 	height: 20px;
@@ -72,7 +65,8 @@ div {
 }
 
 .container {
-	padding: 1px
+	padding-right: 100px;
+	padding-left: 100px;
 }
 
 .container-intro {
@@ -89,7 +83,7 @@ div {
 	line-height: 40px;
 	width: 100%;
 	background-color: #f8c291;
-	padding: 0px 0;
+	padding: 0;
 	margin-bottom: 0;
 }
 
@@ -107,7 +101,8 @@ div {
 }
 
 .photos img {
-	width: 33%;
+	width:33%;
+	height: 33%;
 }
 
 .container-paragraphe {
@@ -141,15 +136,20 @@ h1::after {
 
 .bloc-paragraphe img {
 	width: 100%;
-}
-
-#gototop i {
-	font-size: 50px;
-	color: black;
+	height: 47%;
 }
 
 #gototop {
-	text-align: right;
+	position: fixed;
+	bottom: 100px;
+	right: 0;
+	z-index: 998;
+	background-color: #FFFFFF;
+}
+
+#gototop i {
+	font-size: 100px;
+	color: black;
 }
 
 footer {
