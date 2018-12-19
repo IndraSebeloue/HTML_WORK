@@ -1,103 +1,46 @@
+/* Les polices */
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+/* fin */
+
 body {
 	margin: 0;
 	overflow-x: hidden;
 }
-/* Slide bar */
-#slideshow {
-	position:static;
-	width: 100%;
-	height: 310px;
-	padding: 10px;
-	margin: 15px 5px 10px 5px;
+
+p {
+	font-family: 'Titillium Web', sans-serif;
 }
 
-#slideshow:before,
-#slideshow:after {
-	position: static;
-	bottom:16px;
-	z-index: -10;
-	width: 50%;
-	height: 20px;
-	content: " ";
-	background: rgba(0,0,0,0.1);
-	border-radius: 10%;
-	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
-}
-#slideshow:before {
-	left:0;
-	transform: rotate(-4deg);
-}
-#slideshow:after {
-	right:0;
-	transform: rotate(4deg);
+p:first-letter {
+	display: block;
+	font-weight: 1000;
+	font-size: 30px;
 }
 
-/* gestion des dimensions et débordement du conteneur */
-#slideshow .container {
-	position: static;
-	width: 1400px;
-	height: 610px;
-}
-
-/* on prévoit un petit espace gris pour la timeline */
-#slideshow .container:after {
-	position:absolute;
-	bottom: 0; left:0;
-	content: " ";
-	width: 100%;
-	height: 1px;
-	background: #999;
-}
-/*
-   le conteneur des slides
-   en largeur il fait 100% x le nombre de slides
-*/
-#slideshow .slider {
-	position: absolute;
-	left:0; right: 0; top:60px;
-	width: 300%;
-	height: 310px;
-}
-
-/* annulation des marges sur figure */
-#slideshow figure {
-	position:relative;
-	display:inline-block;
-	padding:1px; margin:0;
-}
-/* petit effet de vignette sur les images */
-#slideshow figure:after {
-	position: absolute;
-	display:block;
-	content: " ";
-	top:0; left:0;
-	width: 100%; height: 100%;
-	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
-}
-
-/* styles de nos légendes */
-#slideshow figcaption {
-	position:absolute;
-	left:0; right:0; bottom: 50%;
-	padding: 10px;
+.logo h1 {
+	text-align: center;
+	font-size: 90px;
+	font-family: 'Rajdhani', sans-serif;
+	font-variant: small-caps;
 	margin: 0;
-	text-align:center;
-	letter-spacing: 0.1em;
-	word-spacing: 0.05em;
-	background: #FFFFFF; opacity: 0.75;
-	color: black;
-	font-weight: bold;
-	text-transform: uppercase;
+	letter-spacing: 8pt;
 }
 
-/* fonction d'animation, n'oubliez pas de prefixer ! */
-@keyframes slider {
-	0%, 20%, 100%	{ left: 0 }
-	25%, 45%		{ left: -100% }
-	50%, 70%		{ left: -200% }
-	75%, 95%		{ left: -300% }
+.headerimg {
+	text-align: center;
 }
- /* fin slide bar*/
+
+#socialnetwork {
+	font-size: 30px;
+	text-align: center;
+}
+
+#socialnetwork a {
+	color: black;
+	text-decoration: none;
+}
 
 #nav {
 	position: fixed;
@@ -111,10 +54,11 @@ body {
 	text-align: center;
 	font-weight: bold;
 	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
 }
 #nav li {
 	display: inline;
-	list-style: none; /* nécessaire pour IE7 */
+	list-style: none;
 }
 div {
 	position: relative;
@@ -133,22 +77,26 @@ div {
 
 .container-intro {
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 10px;
 	text-align: center;
 }
 
 .container-intro > h1 {
 	color: #FFFFFF;
+	font-variant: small-caps;
+	font-family: 'Ubuntu', sans-serif;
 	height: 40px;
 	line-height: 40px;
 	width: 100%;
-	background-color: #ff5e57;
-	padding: 5px 0;
+	background-color: #f8c291;
+	padding: 0px 0;
+	margin-bottom: 0;
 }
 
 .container-intro > p {
 	padding: 5px;
-	text-align: center;
+	padding-top: 0;
+	text-align: justify;
 }
 
 .photos {
@@ -176,9 +124,15 @@ div {
 
 .bloc-paragraphe > h1 {
 	color: #FFFFFF;
-	background-color: #ff5e57;
+	background-color: #f8c291;
 	text-align: center;
+	font-variant: small-caps;
 	font-weight: bold;
+}
+
+h1::after {
+	content: url ("Images/18211.jpg");
+	width: 10px;
 }
 
 .bloc-paragraphe > p {
@@ -189,8 +143,17 @@ div {
 	width: 100%;
 }
 
+#gototop i {
+	font-size: 50px;
+	color: black;
+}
+
+#gototop {
+	text-align: right;
+}
+
 footer {
-	position: fixed;
+	position:sticky;
 	bottom: 0;
 	width: 100%;
 	height: 40px;
@@ -200,7 +163,7 @@ footer {
 	text-align: center;
 	font-size: 24px;
 	font-weight: bold;
-	margin-top: 50px;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 footer a {
