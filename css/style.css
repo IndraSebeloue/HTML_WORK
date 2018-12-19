@@ -174,3 +174,27 @@ footer a {
 footer a:hover {
 	font-size: 28px;
 }
+
+
+/* A propos */
+
+.Apropos > h1 {
+	background-color: #f8c291;
+	width: 300px;
+	font-size: 30px;
+	font-family: 'Ubuntu', sans-serif;
+	font-variant: small-caps;
+}
+
+.introabout > h2 {
+	background-color: #f8c291;
+	width: 400px;
+	font-size: 30px;
+	font-family: 'Ubuntu', sans-serif;
+	font-variant: small-caps;
+}
+
+.introabout {
+	display: flex;
+	flex-direction: row;
+}
