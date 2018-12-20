@@ -49,10 +49,20 @@ p:first-letter {
 	font-size: 15px;
 	font-family: 'Ubuntu', sans-serif;
 }
+
 #nav li {
 	display: inline;
 	list-style: none;
 }
+
+#nav ul {
+	background-color:#f8c291;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
 div {
 	position: relative;
 }
@@ -177,7 +187,10 @@ footer a:hover {
 
 
 /* A propos */
-
+p {
+	text-align: justify;
+	padding-right: 20px;
+}
 .Apropos > h1 {
 	background-color: #f8c291;
 	width: 300px;
@@ -189,7 +202,9 @@ footer a:hover {
 .introabout > h2 {
 	background-color: #f8c291;
 	width: 400px;
-	font-size: 30px;
+	height: 150px;
+	padding: 10px;
+	font-size: 20px;
 	font-family: 'Ubuntu', sans-serif;
 	font-variant: small-caps;
 }
@@ -197,4 +212,77 @@ footer a:hover {
 .introabout {
 	display: flex;
 	flex-direction: row;
+}
+
+.introabout .video {
+	padding-top: 40px;
+	padding-left: 50px;
+}
+
+.video {
+	text-align: center;
+}
+
+.video h2 {
+	background-color: #f8c291;
+	font-size: 30px;
+	font-family: 'Ubuntu', sans-serif;
+	font-variant: small-caps;
+}
+
+/* page Toulouse */
+
+hr {
+	width: 55%;
+	height: 3px;
+	color: black;
+	background-color: black;
+}
+
+.Topadresses {
+	text-align: center;
+}
+
+.Topadresses h2 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color:#f8c291;
+}
+
+#Toulouseadresses {
+	background-color: black;
+	color: #FFFFFF;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	font-variant: small-caps;
+}
+
+.adressesfood {
+	display: flex;
+	flex-direction: row;
+}
+
+.adressesfood p {
+	text-align: justify;
+	width: 50%;
+	padding-top: 30px;
+}
+
+.adressesfood h3 {
+	width: 15%;
+	background-color: #f8c291;
+}
+
+.adressesfood img {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 400px;
+	height: 380px;
+}
+
+#adressetel {
+	text-align: center;
 }

@@ -11,11 +11,7 @@
 </head>
 <body>
 
-  <ul id="nav">
-    <li><a href="./pageshtml/apropos.html">A propos</a></li>
-    <li><a href="#">Bonnes adresses</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
+<?php include_once "./essaiemenuderoulant.html";?>
 
 <div class="logo">
   <h1>Envie de gouter</h1>
@@ -60,7 +56,7 @@
     </div>
 
     <div class="bloc-paragraphe">
-        <h1><a href="./pageshtml/toulouse_bonnesadresse.html">Toulouse</a></h1>
+        <h1>Toulouse</h1>
         <br>
           <p>
             Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
