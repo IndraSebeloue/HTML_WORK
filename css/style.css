@@ -286,3 +286,10 @@ hr {
 #adressetel {
 	text-align: center;
 }
+
+/* CONTACT */
+
+#h1contact {
+	background-color: #f8c291;
+	font-size: 30px;
+	text-align: center;}
